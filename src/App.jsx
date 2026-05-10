@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import HomeView from './MainPortfolio';
 import ProjectsView from './ProjectsPortfolio';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const GlobalNavbar = ({ activePage, setActivePage }) => {
   return (
@@ -62,6 +63,7 @@ export default function App() {
       </main>
 
       <Footer isProjectPage={activePage === 'projects'} />
+      <SpeedInsights />
     </div>
   );
 }
