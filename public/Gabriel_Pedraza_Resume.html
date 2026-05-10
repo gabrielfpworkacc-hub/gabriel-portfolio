@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Pedraza - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        charcoal: '#2A1A12',
+                        walnut: '#8B5E3C',
+                        gold: '#D4AF37',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @media print {
+            body { background-color: white !important; color: black !important; }
+            .no-print { display: none !important; }
+            @page { margin: 0.5in; }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans antialiased flex justify-center py-10 print:py-0 print:bg-white">
+
+    <!-- Print Button -->
+    <div class="fixed top-5 right-5 no-print">
+        <button onclick="window.print()" class="bg-charcoal text-white px-6 py-2 rounded-full font-medium shadow-lg hover:bg-walnut transition-colors">
+            Save as PDF
+        </button>
+    </div>
+
+    <!-- Resume Container -->
+    <div class="bg-white w-full max-w-[850px] min-h-[1100px] shadow-2xl print:shadow-none p-12 print:p-0 mx-auto box-border">
+        
+        <!-- Header -->
+        <header class="border-b-2 border-charcoal pb-6 mb-6">
+            <h1 class="text-5xl font-serif font-bold text-charcoal mb-2">Gabriel F. Pedraza</h1>
+            <div class="flex flex-wrap gap-4 text-sm font-medium text-gray-600">
+                <span>📍 Garland, TX</span>
+                <span>📞 (469) 708-3956</span>
+                <span>✉️ gabrielfp.work.acc@gmail.com</span>
+            </div>
+        </header>
+
+        <!-- Profile -->
+        <section class="mb-6">
+            <h2 class="text-lg font-bold text-charcoal uppercase tracking-wider mb-2">Professional Profile</h2>
+            <p class="text-sm leading-relaxed text-gray-700">
+                Senior at the University of North Texas majoring in Project Design and Analysis. Bringing a blend of creativity, communication, and analytical skills to operations systems building. Passionate about project management, complemented by practical experience in business, consulting, and legal domains. Committed to contributing innovative and strategic solutions that make work structured and repeatable.
+            </p>
+        </section>
+
+        <!-- Experience -->
+        <section class="mb-6">
+            <h2 class="text-lg font-bold text-charcoal uppercase tracking-wider mb-3 border-b border-gray-200 pb-1">Experience</h2>
+            
+            <div class="mb-5">
+                <div class="flex justify-between items-baseline mb-1">
+                    <h3 class="text-base font-bold text-charcoal">Queendom Arts Consulting</h3>
+                    <span class="text-sm font-medium text-gray-500">Feb 2025 – Present</span>
+                </div>
+                <div class="text-sm font-semibold text-walnut mb-2">Lead Project Manager</div>
+                <ul class="list-disc list-outside ml-4 space-y-1 text-sm text-gray-700">
+                    <li>Managed 5 multi-industry projects concurrently and events for the firm and its clients.</li>
+                    <li>Created and led detailed project plans, including timelines, milestones, and resource allocation.</li>
+                    <li>Supervised 2 project management interns, assigned tasks, tracked productivity and quality.</li>
+                    <li>Handled client onboarding processes and trained clients on the firm's systems and tools.</li>
+                    <li>Coordinated internal teams and deliverables for end-to-end client projects.</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <div class="flex justify-between items-baseline mb-1">
+                    <h3 class="text-base font-bold text-charcoal">Johnson Friedman Law Group, PLLC</h3>
+                    <span class="text-sm font-medium text-gray-500">Summers 2022 & 2023</span>
+                </div>
+                <div class="text-sm font-semibold text-walnut mb-2">Research & Documentation Intern</div>
+                <ul class="list-disc list-outside ml-4 space-y-1 text-sm text-gray-700">
+                    <li>Researched previous case law to ensure contracts contained all needed information and clauses.</li>
+                    <li>Revised and reviewed contracts based on attorney feedback to minimize risk potential.</li>
+                    <li>Reviewed client rent costs and previous tenant claims to determine ownership rights.</li>
+                    <li>Completed targeted legal research projects to systematically limit client vulnerabilities.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Academic Projects -->
+        <section class="mb-6">
+            <h2 class="text-lg font-bold text-charcoal uppercase tracking-wider mb-3 border-b border-gray-200 pb-1">Key Academic Projects</h2>
+            
+            <div class="mb-4">
+                <div class="flex justify-between items-baseline mb-1">
+                    <h3 class="text-base font-bold text-charcoal">Project Corelign <span class="font-normal text-gray-600">| AGWinsights</span></h3>
+                    <span class="text-sm font-medium text-gray-500">Spring 2025 – Fall 2025</span>
+                </div>
+                <ul class="list-disc list-outside ml-4 space-y-1 text-sm text-gray-700">
+                    <li>Interviewed 160 students across multiple campuses to collect and analyze needs-based data.</li>
+                    <li>Identified 64 unique themes and categorized 462 supporting quotes to inform UX/UI design decisions.</li>
+                    <li>Iterated and designed a professional development app in Figma based on extensive user testing.</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <div class="flex justify-between items-baseline mb-1">
+                    <h3 class="text-base font-bold text-charcoal">Resilience Hubs <span class="font-normal text-gray-600">| Serve Denton</span></h3>
+                    <span class="text-sm font-medium text-gray-500">Fall 2024</span>
+                </div>
+                <ul class="list-disc list-outside ml-4 space-y-1 text-sm text-gray-700">
+                    <li>Collaborated with Serve Denton to design a hub for smaller/rural communities addressing 5 key service pillars.</li>
+                    <li>Conducted region-wide demographic research to create user personas guiding floorplan design.</li>
+                    <li>Produced FF&E, cost estimates, and a supportive narrative to complete the final proposal.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills & Education -->
+        <div class="grid grid-cols-2 gap-8">
+            <section>
+                <h2 class="text-lg font-bold text-charcoal uppercase tracking-wider mb-3 border-b border-gray-200 pb-1">Skills & Tools</h2>
+                <div class="text-sm text-gray-700 leading-relaxed">
+                    <span class="font-semibold text-charcoal">Methodologies:</span> Agile, Waterfall, Project Planning, Risk Management, Stakeholder Management<br><br>
+                    <span class="font-semibold text-charcoal">Tools:</span> QuickBooks Online, ClickUp, Google Workspace, Figma<br><br>
+                    <span class="font-semibold text-charcoal">Languages:</span> Bilingual (English and Spanish)
+                </div>
+            </section>
+            <section>
+                <h2 class="text-lg font-bold text-charcoal uppercase tracking-wider mb-3 border-b border-gray-200 pb-1">Education & Certs</h2>
+                <div class="mb-3">
+                    <h3 class="text-sm font-bold text-charcoal">B.S. in Project Design and Analysis</h3>
+                    <div class="text-sm text-gray-600">Minor in Social Sciences</div>
+                    <div class="text-sm text-gray-700">University of North Texas | Aug 2026</div>
+                </div>
+                <div>
+                    <h3 class="text-sm font-bold text-charcoal">Certifications</h3>
+                    <ul class="list-disc list-outside ml-4 text-sm text-gray-700">
+                        <li>QuickBooks Online (2023)</li>
+                        <li>Lean Six Sigma Green Belt (2025)</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+    </div>
+</body>
+</html>
